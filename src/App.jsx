@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="font-sans">
+    <div className="font-sans px-4 md:px-8">
       <Header />
       <Hero />
       <Features />
@@ -13,5 +13,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
