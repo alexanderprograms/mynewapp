@@ -3,9 +3,9 @@ function Features() {
     <section>
       <h3>Features</h3>
       <ul>
-        <li>⚡ Fast Performance</li>
-        <li>🎨 Beautiful Design</li>
-        <li>📱 Fully Responsive</li>
+        <li>Fast Performance</li>
+        <li>Beautiful Design</li>
+        <li>Fully Responsive</li>
       </ul>
     </section>
   );
