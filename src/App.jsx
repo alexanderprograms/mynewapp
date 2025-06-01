@@ -5,11 +5,13 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="font-sans px-4 md:px-8">
-      <Header />
-      <Hero />
-      <Features />
-      <Footer />
+    <div className="flex flex-col min-h-screen bg-gray-50">
+      <div className="font-sans px-4 md:px-8">
+        <Header />
+        <Hero />
+        <Features />
+        <Footer />
+      </div>
     </div>
   );
 }
