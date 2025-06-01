@@ -6,12 +6,12 @@ import Footer from './components/Footer';
 function App() {
   return (
     
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+    <div className="App">
       <Header />
       <Hero />
       <Features />
       <Footer />
-      </div>
+    </div>
      
   );
 }
