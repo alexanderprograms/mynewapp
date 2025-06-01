@@ -1,7 +1,10 @@
-export default function Footer() {
+function Footer() {
   return (
-    <footer className="bg-gray-800 text-white text-center p-6">
-      <p>&copy; 2025 ATLEX Studios. All rights reserved.</p>
+    <footer>
+      <p>&copy; {new Date().getFullYear()} ATLEX Studios. All rights reserved.</p>
     </footer>
   );
 }
+
+export default Footer;
+

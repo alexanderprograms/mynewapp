@@ -1,3 +1,8 @@
+/* This file is part of the "Vite + Lit" template project.
+ * It is used to define global styles for the application.
+ * The styles are scoped to the root element and apply to all components.
+ * The styles include typography, colors, and button styles.
+ */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
