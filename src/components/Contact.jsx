@@ -16,6 +16,7 @@ function Contact() {
     event.preventDefault();
     console.log('Form submitted:', formData);
     // You could send this data to a service like EmailJS or Formspree
+    setFormData({ name: '', email: '', message: '' });
   }
 
   return (
