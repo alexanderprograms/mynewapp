@@ -12,12 +12,29 @@ function Contact() {
     setFormData(prev => ({ ...prev, [name]: value }));
   }
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    console.log('Form submitted:', formData);
-    // You could send this data to a service like EmailJS or Formspree
-    setFormData({ name: '', email: '', message: '' });
+  async function handleSubmit(event) {
+  event.preventDefault();
+
+  try {
+    const response = await fetch('http://localhost:3001/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    });
+
+    if (response.ok) {
+      alert('Message sent!');
+      setFormData({ name: '', email: '', message: '' }); // Clear the form
+    } else {
+      alert('Something went wrong.');
+    }
+  } catch (error) {
+    console.error('Error sending form:', error);
+    alert('Server error.');
   }
+}
 
   return (
     <section>
